@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="registration.css">
+    
+</head>
+<body>
+    
+    <form id="registrationForm">
+     <h2>Registration</h2>
+     <div class="header">
+        <div>
+            <label for="fullname"><b>Full name</b></label><br>
+            <input type="text" name="Full Name"placeholder="Enter your name"><br><br>
+            <label for="email"><b>Email</b></label><br>
+            <input type="text" name="email" placeholder="Enter your email"><br><br>
+            <label for="password"><b>Password</b></label><br>
+            <input type="password" id="newPassword" placeholder="Enter your password">
+            <span id="passwordMessage" ></span>
+         </div>
+         <div>
+            <label for="username"><b>Username</b></label><br>
+            <input type="text" name="Username" placeholder="Enter your username"><br><br>
+            <label for="phn"><b>Phone number</b></label><br>
+            <input type="number" name="phn" placeholder="Enter your number"><br><br>
+            <label for="password"><b>Confirm password</b></label><br>
+            <input type="password" name="cpsw" id="confirmPassword" placeholder="Confirm your password">
+            <span id="confirmMessage" ></span>
+         </div>
+     </div>
+     <div class="btn">
+        <br>
+        <label for="gender"><b>Gender</b></label><br>
+        <input type="radio" name="male">Male
+        <input type="radio" name="female">Female
+        <input type="radio" name="chioce">Prefer not to say<br>
+     </div>
+     <div>
+        <br>
+        <button onclick="window.location.href='successfulRegister.html';" >Register</button>
+   
+      
+     </div>
+     </form>
+     <script src="registration.js"></script>
+</body>
+</html>
